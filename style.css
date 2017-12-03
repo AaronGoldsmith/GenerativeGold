@@ -1,0 +1,263 @@
+body,html{padding:0px;margin:0px;background-color: rgba(51, 51, 51, 0.068);/* Standard syntax */}
+body{
+    width:100%;
+    margin:0px;
+    background-color:rgba(51, 51, 51, 0.068);; background: linear-gradient(#e4e3e1ce, #7489fd); 
+}
+h3,h2,p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+p#dsc{background-color: rgba(255,255,255,0.2)}
+h2,h3{color: #ffcc33;text-shadow:  2px 2px #000000}
+h2{border-color: 1px solid #333}
+h3{margin-top:5px; margin-left: 3%;}
+.eText{
+    margin-left:40px; 
+    padding: 25px;
+    width: 75%;
+    position:relative;
+    background-color: whitesmoke;
+    line-height: 24px;
+    border: 4px solid #333;  
+    margin-bottom:100px; 
+}
+p#header{background-color:none;}
+.aboutText{
+    word-wrap: break-word;   
+    margin-left:40px; 
+    padding: 25px;
+    width: 75%;
+    position:relative;
+    background-color: whitesmoke;
+    line-height: 24px;
+    border: 4px solid #333;
+}
+.eText>.aboutText{
+    word-wrap: break-word;   
+    margin-left:40px; 
+    padding: 25px;
+    width: 75%;
+    position:relative;
+    background-color: aliceblue;
+    line-height: 24px;
+    border: 4px solid #333;
+}
+div#images{margin-left:50px;}
+.container,.container1{
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.9s;
+    animation-name: fadeIn;
+    animation-duration: 0.9s;
+    background-color:#3366ff; background: linear-gradient(#3366ff,#0e034b,#31107c);
+    box-shadow: -5px 10px 15px rgba(51, 51, 51, 0.178);
+    padding: 120px 15px 10px 15px; 
+    margin-top:-17px;
+    padding-left:50px;
+    position:initial;
+    border: 2px solid lightgrey;   
+    border-top: 1px solid #333;
+}
+.canvasContainer{padding:0px;margin-top:-20px;}
+.nav{
+    width:100%;
+    background-color: #02050f0e;
+    margin:0px;
+    padding-top: 25px;    
+    position: inherit;
+    float:top;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+ul{
+    text-align: center; 
+}
+   #selected{background-color:#e4e3e1; border-bottom: 1px solid black} 
+li{
+    padding:19px;
+    margin: 0px 20px 0px 20px;
+    font-size:25px;
+    text-align: center;
+    color: rgb(54, 54, 54);
+    display:inline-block;
+}
+a:hover {
+    color: black;
+}
+a::after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+a{
+   color: inherit;
+   text-decoration: none;
+}
+img#infoI{-webkit-user-select: none; /* Chrome/Safari */   
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */}
+img{background-color: none;}
+.songsim a{
+    text-decoration:underline;
+    display:inline-block;
+}
+#ins > img {height:250px;position:relative;top:10px}
+.container p{background-color:whitesmoke;}
+.houseA p,.zipfy p, .songsim p,.KQED p,.drawingArt p{width:40%;float:left; margin-right:20px;line-height: 1.4em}
+.songsim,
+.drawingArt,
+.zipfy,
+.houseA,
+.KQED{background-color:whitesmoke; padding: 25px;}
+.KQED{margin-top:100px;}
+#support{height:90px;display:flex;position:relative;}
+#support:hover{height:300px;position:relative;}
+img#logo{
+    margin: 0px;
+    position:absolute;
+    height:160px;
+    padding:0px;
+    background-color: transparent;
+    left:5px;
+    top: -55px;
+
+}
+#txt{
+    display:inline;margin:25px;
+}
+form{
+    padding: 40px;
+}
+#buttons{
+    background-color: rgba(255,255,255,0.5);
+    display: inline-block;
+    position:absolute;
+    bottom:250px;
+    padding: 5px 20px;
+    margin: 0px 20px;
+    border: 1px solid #333;
+}
+label{
+    font-size: 20px;
+    margin-left:20px; margin-top:20px;position: absolute; 
+}
+button:hover{text-decoration-line: underline; }
+
+button{
+    display:inline-block;
+    -webkit-user-select: none; /* Chrome/Safari */   
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+#txtArea{
+    padding:20px;
+    position: absolute;resize:none;
+    width: 35%;
+    margin:50px 50px 30px 20px;padding-left:10px;
+}
+
+
+/* animation */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+@-webkit-keyframes shakeR{
+    from { margin-left: 0px}
+    to {margin-left:10px}
+}
+@keyframes shakeR {
+    from { left: 0px}
+    to {left:10px}
+}
+@-webkit-keyframes shakeL{
+    from { margin-left: 5px}
+    to {margin-left:-5px}
+}
+@keyframes shakeL {
+    from { left: 5px}
+    to {left:-5px}
+}
+
+ /* code assistance from w3schools.org */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 0px;
+    bottom:0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* m Content */
+.m-content {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    margin: 20px;
+    background-color: #fefefe;
+    width: 65%;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+.close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.m-header {
+    padding: 2px 16px;
+    background-color: rgba(187,187,187,0.8);
+    color: white;
+}
+
+.m-body {padding: 2px 16px;}
+.m-footer > p{ position:relative; display:inline ; margin: 7px 10px; background-color: none;}
+.m-footer {
+    border-top: 2px solid "#333";
+    padding: 2px 16px;
+    display: inline-flex;
+    width: 96%;
+    background-color: rgba(185, 185, 185, 0.8);
+}
+#infoI{
+
+    float:left;z-index:2;position: absolute; width:40px;left:0px;
+}
+#infoI:hover{
+    -webkit-animation-name: shakeR; /* Fade in the background */
+    -webkit-animation-duration: 0.1s;
+    animation-name: shakeR;
+    animation-duration: 0.1s;
+    -webkit-animation-name: shakeL; /* Fade in the background */
+    -webkit-animation-duration: 0.1s;
+    animation-name: shakeL;
+    animation-duration: 0.1s
+}

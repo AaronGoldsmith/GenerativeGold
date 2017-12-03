@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <link rel = "stylesheet"
+            type = "text/css"
+            href = "style.css" />
+            <link rel="shortcut icon" href="favicon.ico" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>GOLDSMITH | Project</title>
+
+    </head>
+    <div class = "nav">
+       <ul>
+            <li style="float:left">
+                    <a href="homePage.html"><img id="logo" src="images/logo.png"></img>
+                </a></li> 
+            <li id="selected"><a href="#">Generative Art Project</a></li>
+            <li><a href="index.html">Create</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+      </ul>
+    </div>
+
+<body>
+
+<div class="container1">
+    <canvas id ="mycanvas" style="margin: -20px 100px 10px 20px;"></canvas> 
+        <label style="color:aliceblue";="txtArea">Input Text</label>
+        <textarea onpaste = "document.getElementById('txtArea').value = ''" id="txtArea"  draggable="false" rows="10" cols="1">
+        The most beautiful thing you can do, is speak your mind. 
+        </textarea>
+        <div id="buttons">
+            <button onclick = "run()">Run</button>
+            <button id = 'help' onclick = "alert('\nType some text in the box to the right; then click run!\
+            \nTips:\n• If the generated art is too simple, try adding more text to your input')">help</button>
+            <button onclick = "document.getElementById('txtArea').value = ''">clear</button>
+            <button onclick = "sampleText()">Random text</button>
+        </div>   
+        <div id="modalD" class="modal">
+            <div class="m-content">
+                    <div class="m-header">
+                    <span class="close">&times;</span>
+                    <h2>How to use the program:</h2>
+                    </div>
+                    <div class="m-body">
+                    <p>Type some text into the input box above</p>
+                    <p>Click run when you're finished</p>
+                    </div>
+                    <div class="m-footer">
+                        <h3>CLEAR</h3>
+                        <p>Clears the text in the input box</p>
+                        <h3>RANDOM TEXT</h3>
+                        <p>Generates pseudo-random text </p>
+                    </div>
+                </div>
+                
+        </div>
+
+</div>
+</body>
+<script>
+    var btn = document.getElementById('help');
+    var modalD = document.getElementById('modalD');
+    var X = document.getElementsByClassName("close")[0];
+    window.onclick = function(event){
+        if (event.target == modalD) {
+            modalD.style.display = "none";
+        }
+    }
+        btn.onclick = function(){
+        modalD.style.display = "block";
+    }
+    X.onclick = function() {
+        modalD.style.display = "none";
+    }
+    
+</script>
+<script src="app.js"></script>
+
+</html>
